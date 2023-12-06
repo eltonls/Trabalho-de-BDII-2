@@ -7,7 +7,8 @@ Assim foi feita a recuperação do banco de dados em questão que foi entregue a
 
 # Modelagem Lógica do Banco de Dados
 Após a normalização do banco de dados, foi feito a seguinte modelagem lógica dos dados presentes. O Script que apresenta a normalização feita no banco está disponível junto ao repositório. 
-![[Modelagem Lógica do Trabalho de BDII.png]]
+![Modelagem do Banco](https://github.com/eltonls/Trabalho-de-BDII-2/blob/main/Modelagem%20L%C3%B3gica%20do%20Trabalho%20de%20BDII.png)
+
 # Análise Exploratória dos Dados
 ```Python
 # Importando bibliotecas  
