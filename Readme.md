@@ -115,68 +115,24 @@ num_ano_np: Ano NP (float64)
 ```
 
 <class 'pandas.core.frame.DataFrame'> RangeIndex: 2025116 entries, 0 to 2025115 Data columns (total 37 columns):
-
-## Column Dtype[](http://localhost:8888/lab#Column--------------------Dtype)
-
----
-
-0 id int64  
-1 num_ano int64  
-2 cod_ne object  
-3 codigo_orgao object  
-4 dsc_orgao object  
-5 cod_credor object  
-6 dsc_nome_credor object  
-7 cod_fonte object  
-8 dsc_fonte object  
-9 cod_funcao object  
-10 dsc_funcao object  
-11 cod_item object  
-12 dsc_item object  
-13 cod_item_elemento object  
-14 dsc_item_elemento object  
-15 cod_item_categoria object  
-16 dsc_item_categoria object  
-17 cod_item_grupo object  
-18 dsc_item_grupo object  
-19 dsc_modalidade_licitacao object  
-20 cod_item_modalidade int64  
-21 dsc_item_modalidade object  
-22 cod_programa object  
-23 dsc_programa object  
-24 cod_subfuncao object  
-25 dsc_subfuncao object  
-26 num_sic object  
-27 cod_np object  
-28 vlr_empenho float64  
-29 vlr_liquidado object  
-30 valor_pago float64  
-31 vlr_resto_pagar float64  
-32 dth_empenho datetime64[ns] 
-33 dth_pagamento datetime64[ns] 
-34 dth_liquidacao object  
-35 dth_processamento datetime64[ns]
-36 num_ano_np float64  
-dtypes: datetime64[ns](http://localhost:8888/files/3?_xsrf=2%7C9bfefe8e%7Cf23410350b87465dce4d516f985f2c40%7C1701643127), float64(4), int64(3), object(27) memory usage: 571.7+ MB None
 ## Tipos de Dados[](http://localhost:8888/lab#Tipos-de-Dados)
 
 O DataFrame contém uma variedade de tipos de dados, incluindo inteiros (int64), ponto flutuante (float64), objetos (object) e datas (datetime64[ns]).
-
 ## Uso de Memória[](http://localhost:8888/lab#Uso-de-Memória)
 
 O DataFrame utiliza aproximadamente 571.7 MB de memória.
 
 ## Visualização Inicial[](http://localhost:8888/lab#Visualização-Inicial)
 
-A visualização inicial apresenta as primeiras 5 entradas do DataFrame, exibindo valores para cada coluna.
+A visualização inicial apresenta as primeiras 5 entradas do DataFrame, exibindo valores para cada coluna. Infelizmente, as 37 Colunas não cabem na tela, mas é uma simples visualização que demonstra o que esperar dos dados dessa tabela.
 
-```
-       id  num_ano    cod_ne  ... dth_liquidacao dth_processamento num_ano_np
-```
-
-0 2021552683 2020 00028092 ... None 2022-10-27 2022.0 1 2021510082 2020 00028092 ... None 2022-10-27 2021.0 2 2021552684 2020 00028093 ... None 2022-10-27 2021.0 3 2020784292 2020 00028093 ... None 2022-10-27 2020.0 4 2021552685 2020 00028094 ... None 2022-10-27 2021.0
-
-[5 rows x 37 columns]
+| id         | num_ano | cod_ne   | ... | dth_processamento | num_ano_np |
+| ---------- | ------- | -------- | --- | ----------------- | ---------- |
+| 2021552683 | 2020    | 00028092 | ... | 2022-10-27        | 2022.0     |
+| 2021510082 | 2020    | 00028092 |     | 2022-10-27        | 2021.0     |
+| 2021552684 | 2020    | 00028093 | ... | 2022-10-27        | 2021.0     |
+| 2020784292 | 2020    | 00028093 | ... | 2022-10-27        | 2020.0     |
+| 2021552685 | 2020    | 00028094 | ... | 2022-10-27        | 2021.0     |
 
 ## Valores Nulos[](http://localhost:8888/lab#Valores-Nulos)
 
@@ -204,17 +160,6 @@ O resumo dos valores nulos mostra a contagem de valores nulos para cada coluna d
 |dtype: int64|||
 
 *As demais colunas não apresentam valores nulos
-
-## Resumo Estatístico[](http://localhost:8888/lab#Resumo-Estatístico)
-
-O resumo estatístico fornece estatísticas descritivas para colunas numéricas, incluindo contagem, média, mínimo, 25º percentil, mediana (50º percentil), 75º percentil e máximo. Isso oferece uma visão geral das tendências centrais e da dispersão dos dados numéricos.
-
-```
-             id       num_ano  ...              dth_processamento    num_ano_np
-```
-
-count 2.025116e+06 2.025116e+06 ... 2025116 1.915351e+06 mean 1.106000e+09 2.020271e+03 ... 2022-10-14 01:35:21.314926336 2.020324e+03 min 1.000000e+00 2.019000e+03 ... 2022-08-17 00:00:00 2.019000e+03 25% 5.062798e+05 2.019000e+03 ... 2022-08-17 00:00:00 2.019000e+03 50% 2.020498e+09 2.020000e+03 ... 2022-10-27 00:00:00 2.020000e+03 75% 2.021027e+09 2.021000e+03 ... 2022-10-27 00:00:00 2.021000e+03 max 2.021573e+09 2.022000e+03 ... 2022-12-08 00:00:00 2.022000e+03 std 1.005756e+09 1.050275e+00 ... NaN 1.029125e+00
-
 # Limpeza dos Dados
 ```PYTHON
 # Importando bibliotecas
